@@ -1,0 +1,97 @@
+  <!DOCTYPE html>
+
+  <html>
+
+    <head>
+
+      <meta charset="utf-8">
+
+      <meta httpequiv="XUACompatible" content="IE=edge">
+
+      <meta name="viewport" content="width=devicewidth, initialscale=1">
+
+       <title>Latihan</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+    </head>
+
+    <body style="padding-top:60px;">
+
+      <!--bagian navigation-->
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+        <span class="sr-only">Toggle navigation</span>
+
+        <span class="icon-bar"/>
+
+        <span class="icon-bar"/>
+
+        <span class="icon-bar"/>
+
+      </button>
+
+      <a href="#" class = "navbar-brand">MGRware</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse">
+
+    <ul class="nav navbar-nav navbar-right">
+<li><%= link_to 'Home', articles_path %></li>
+
+<li>a></li>
+<li>c</li>
+    </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- Bagian Content -->
+
+      <div class="container clearfix">
+
+        <div class="row row-offcanvas row-offcanvas-left ">
+
+          <!--Bagian Kiri-->
+
+      <div class="col-xs-12 col-sm-3 side pull-lefthttp: sidebar-offcanvas" id="sidebar" role="navigation">
+
+  <div class="">
+
+    <p>gilang</p>
+
+  </div>
+
+</div>
+
+
+          <!--Bagian Kanan-->
+
+          <div id="main-content" class="col-xs-12 col-sm-9 main pull-right">
+
+            <div class="panel-body">
+
+              <%=yield%>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </body>
+
+  </html>
